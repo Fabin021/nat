@@ -1,0 +1,13 @@
+<!doctype html><html lang='pt-BR'><head>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<meta charset='utf-8'><link rel='stylesheet' href='style.css'>
+<title>Estoque</title></head><body>
+<header><small>Controle Estoque</small><h1 id='valor'></h1></header>
+<div class='cards'><div>📦<b id='qtd'></b><br>Itens</div><div>💳<b id='deve'></b><br>Devo</div></div>
+<section><h2>Produtos</h2><div id='lista'></div>
+<input id='n' placeholder='Produto'><input id='q' placeholder='Quantidade'><input id='c' placeholder='Custo'>
+<button onclick='produto()'>Salvar produto</button></section>
+<section><h2>Troca</h2><select id='sai'></select><input id='sq' placeholder='Qtd saiu'><select id='ent'></select><input id='eq' placeholder='Qtd entrou'><button onclick='troca()'>Salvar troca</button></section>
+<section><h2>Parcelas</h2><input id='vc' placeholder='Valor compra'><input id='np' placeholder='Parcelas'><button onclick='parcelar()'>Criar parcelas</button><div id='pars'></div></section>
+<section><h2>Backup</h2><button onclick='backup()'>Exportar backup</button><input type=file onchange='importar(event)'></section>
+<script src='app.js'></script></body></html>
